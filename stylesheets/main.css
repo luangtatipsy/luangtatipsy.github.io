@@ -1,0 +1,21 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  background-color: #FBFBFB;
+}
+
+.heading {
+  font-family: 'Source Sans Pro Semibold', sans-serif;
+}
+
+section#hero_introduction_section {
+  margin-top: 5em;
+}
+section#hero_introduction_section .my-quote {
+  font-size: 15px;
+}
+section#hero_introduction_section i {
+  font-size: 18px;
+}
