@@ -10,12 +10,27 @@ body {
   font-family: 'Source Sans Pro Semibold', sans-serif;
 }
 
-section#hero_introduction_section {
-  margin-top: 5em;
-}
-section#hero_introduction_section .my-quote {
+.my-quote {
   font-size: 15px;
 }
-section#hero_introduction_section i {
+
+.social-links a.btn.btn-social-icon i{
   font-size: 18px;
+}
+
+section#hero_introduction_section .biography_wrapper {
+  -webkit-animation-duration: 1.3s;
+  -moz-animation-duration: 1.3s;
+  -o-animation-duration: 1.3s;
+  -ms-animation-duration: 1.3s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .main-content {
+  padding-top: 60px;
 }
