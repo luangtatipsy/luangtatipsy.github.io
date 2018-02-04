@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #FBFBFB;
+  height: 2000px;
 }
 
 .heading {
@@ -18,19 +19,14 @@ body {
   font-size: 18px;
 }
 
+.py-huge{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 section#hero_introduction_section .biography_wrapper {
   -webkit-animation-duration: 1.3s;
   -moz-animation-duration: 1.3s;
   -o-animation-duration: 1.3s;
   -ms-animation-duration: 1.3s;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-.sticky + .main-content {
-  padding-top: 60px;
 }
