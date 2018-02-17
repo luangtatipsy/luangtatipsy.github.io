@@ -30,3 +30,7 @@ section#hero_introduction_section .biography_wrapper {
   -o-animation-duration: 1.3s;
   -ms-animation-duration: 1.3s;
 }
+
+.section-seperator{
+  background: #f4f4f4;
+}
