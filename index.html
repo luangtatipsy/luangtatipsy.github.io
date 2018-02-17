@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
     <title>Taechawat Konkaew | Web Developer</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
   	<section id="hero-introduction-section" class="mt-5">
   		<div class="hero-wrapper">
   			<div class="container">
@@ -56,13 +56,13 @@
   					<a class="nav-link text-uppercase" href="/">Home</a>
   				</li>
   				<li class="nav-item mx-2">
-  					<a class="nav-link text-uppercase" href="#">About Me</a>
+  					<a class="nav-link text-uppercase" href="#about-me">About Me</a>
   				</li>
   				<li class="nav-item mx-2">
-  					<a class="nav-link text-uppercase" href="#">Education</a>
+  					<a class="nav-link text-uppercase" href="#education">Education</a>
   				</li>
   				<li class="nav-item mx-2">
-  					<a class="nav-link text-uppercase" href="#">Skills</a>
+  					<a class="nav-link text-uppercase" href="#skills">My Skills</a>
   				</li>
   				<li class="nav-item mx-2">
   					<a class="nav-link text-uppercase" href="#">Experience</a>
@@ -115,10 +115,10 @@
                   <td class="py-2 w-25 font-weight-bold">Phone</td>
                   <td class="py-2">+66 94 796 5444</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td class="py-2 w-25 font-weight-bold">Adress</td>
                   <td class="py-2">56 Soi Krungthep-Nontaburi 56-1 Krungthep-Nontaburi, Rd. Bangsue Bangkok Thailand 10800</td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
             </div>
@@ -133,7 +133,7 @@
         <hr>
         <div class="row">
           <div class="col-lg-12">
-            <ul class="timeline px-5">
+            <ul class="timeline">
               <li class="timeline-info"><span></span>
                 <div><span></span>
                   <h4 class="heading text-uppercase">Computer Science, Kasetsart University</h4>
@@ -169,12 +169,91 @@
       </div>
     </section>
 
+    <section id="skills" class="py-huge">
+      <div class="container">
+        <h2 class="heading font-weight-bold text-uppercase text-center">My <span class="text-info">Skills</span></h2>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <div class="bar-wrapper py-2">
+              <h5 class="heading text-uppercase font-weight-bold bar-heading">HTML5</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
+                  <span data-toggle="tooltip" data-placement="top"> </span>
+                </div>
+              </div>
+            </div>
+            <div class="bar-wrapper py-2">
+              <h5 class="heading text-uppercase font-weight-bold bar-heading">HTML5</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
+                  <span data-toggle="tooltip" data-placement="top"> </span>
+                </div>
+              </div>
+            </div>
+            <div class="bar-wrapper py-2">
+              <h5 class="heading text-uppercase font-weight-bold bar-heading">HTML5</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
+                  <span data-toggle="tooltip" data-placement="top"> </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bar-wrapper py-2">
+              <h5 class="heading text-uppercase font-weight-bold bar-heading">HTML5</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
+                  <span data-toggle="tooltip" data-placement="top"> </span>
+                </div>
+              </div>
+            </div>
+            <div class="bar-wrapper py-2">
+              <h5 class="heading text-uppercase font-weight-bold bar-heading">HTML5</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
+                  <span data-toggle="tooltip" data-placement="top"> </span>
+                </div>
+              </div>
+            </div>
+            <div class="bar-wrapper py-2">
+              <h5 class="heading text-uppercase font-weight-bold bar-heading">HTML5</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
+                  <span data-toggle="tooltip" data-placement="top"> </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bar-wrapper py-2">
+              <h5 class="heading text-uppercase font-weight-bold bar-heading">thai (native)</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" >
+                  <span data-toggle="tooltip" data-placement="top"> </span>
+                </div>
+              </div>
+            </div>
+            <div class="bar-wrapper py-2">
+              <h5 class="heading text-uppercase font-weight-bold bar-heading">english</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
+                  <span data-toggle="tooltip" data-placement="top"> </span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js" integrity="sha384-GXICBdfJ+4LCuPllm9sAGHjOYmziKnXegiMHjRoKewf0TZDP0kJN/KcJfePlHu+6" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="javascripts/onViewport.js"></script>
     <script src="javascripts/custom.js"></script>
   </body>
 </html>

@@ -11,7 +11,7 @@ body {
   font-family: 'Source Sans Pro Semibold', sans-serif;
 }
 
-.my-quote {
+.my-quote, .bar-heading{
   font-size: 15px;
 }
 
@@ -33,4 +33,23 @@ section#hero_introduction_section .biography_wrapper {
 
 .section-seperator{
   background: #f4f4f4;
+}
+
+.progress-bar{
+  -webkit-transition: width 1.5s ease-in-out;
+  transition: width 1.5s ease-in-out;
+}
+
+.tooltip .arrow:before{
+  left: 115%;
+  border-left: 5px solid transparent; 
+  border-right: 5px solid transparent; 
+  border-top: 5px solid #eebf3f;
+}
+
+.tooltip > .tooltip-inner {
+  background-color: #eebf3f; 
+  color:rgb(23,44,66); 
+  font-weight:bold; 
+  font-size:13px;
 }
