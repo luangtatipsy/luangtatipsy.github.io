@@ -7,6 +7,10 @@ body {
   height: 2000px;
 }
 
+.navbar{
+  z-index: 99999
+}
+
 .heading {
   font-family: 'Source Sans Pro Semibold', sans-serif;
 }
@@ -35,6 +39,14 @@ section#hero_introduction_section .biography_wrapper {
   background: #f4f4f4;
 }
 
+.section-primary{
+  background: #17a2b8;
+}
+
+.progress{
+  height: 4px;
+}
+
 .progress-bar{
   -webkit-transition: width 1.5s ease-in-out;
   transition: width 1.5s ease-in-out;
@@ -53,3 +65,42 @@ section#hero_introduction_section .biography_wrapper {
   font-weight:bold; 
   font-size:13px;
 }
+
+img.portfolio {
+  height: 270px !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.text-overlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*
+#download-cv{
+  background-image: url('../images/bg-download-section.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}*/
