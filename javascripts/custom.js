@@ -47,4 +47,9 @@ $(function(){
 		var scroll_to = $(this).attr("href");
 		$('body').scrollTo(scroll_to, 1000);
 	});
+
+	$('#hire-btn').click(function(){
+		var scroll_to = $(this).attr("href");
+		$('body').scrollTo(scroll_to, 1000);
+	});
 });
