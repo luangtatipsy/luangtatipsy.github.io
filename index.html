@@ -104,8 +104,11 @@
     					<a class="nav-link text-uppercase" href="#experience">Experience</a>
     				</li>
     				<li class="nav-item mx-2">
-    					<a class="nav-link text-uppercase" href="#projects">Projects</a>
-    				</li>
+              <a class="nav-link text-uppercase" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-uppercase" href="#certificates">Certificates</a>
+            </li>
     				<li class="nav-item mx-2">
     					<a class="nav-link text-uppercase" href="#contact">Contact</a>
     				</li>
@@ -631,22 +634,25 @@
           <hr>
           <div class="row mt-4">
             <div class="col">
-              <form>
+              <form class="gform" method="post" data-email="taechawat.k@gmail.com" action="https://script.google.com/macros/s/AKfycbzfKlgt9_TxcxvD_Wf2GnXv78rNXpXPhEvVxDa-/exec">
+                <div class="alert alert-success thankyou_message mb-5" style="display: none;" role="alert">
+                  <em>I received your email, I will contact you soon...</em>
+                </div>
                 <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
-                  <input type="text" class="form-control form-control-sm">
-                  <label for="form3">Your name</label>
+                  <input type="text" name="name" class="form-control form-control-sm" required>
+                  <label for="name">Your name</label>
                 </div>
                 <div class="md-form form-sm"> <i class="fa fa-envelope prefix grey-text"></i>
-                  <input type="text" class="form-control form-control-sm">
-                  <label for="form2">Your email</label>
+                  <input type="email" name="email" class="form-control form-control-sm" required>
+                  <label for="email">Your email</label>
                 </div>
                 <div class="md-form form-sm"> <i class="fa fa-tag prefix grey-text"></i>
-                  <input type="text" class="form-control form-control-sm">
-                  <label for="form34">Subject</label>
+                  <input type="text" name="subject" class="form-control form-control-sm" required>
+                  <label for="subject">Subject</label>
                 </div>
                 <div class="md-form form-sm"> <i class="fa fa-pencil prefix grey-text"></i>
-                  <textarea type="text" class="md-textarea form-control form-control-sm" rows="4"></textarea>
-                  <label for="form8">Your message</label>
+                  <textarea type="text" name="message" class="md-textarea form-control form-control-sm" rows="4" required></textarea>
+                  <label for="message">Your message</label>
                 </div>
                 <div class="text-center mt-4">
                   <button type="submit" class="btn btn-default">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
@@ -680,5 +686,6 @@
       <!-- Local JS -->
       <script src="javascripts/onViewport.js"></script>
       <script src="javascripts/custom.js"></script>
+      <script data-cfasync="false" src="javascripts/form-submission-handler.js"></script>
     </body>
   </html>
