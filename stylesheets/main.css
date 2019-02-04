@@ -8,7 +8,7 @@ body {
 }
 
 .navbar{
-  z-index: 99999
+  z-index: 1030;
 }
 
 .heading {
@@ -50,6 +50,10 @@ section#hero_introduction_section .biography_wrapper {
 .progress-bar{
   -webkit-transition: width 1.5s ease-in-out;
   transition: width 1.5s ease-in-out;
+}
+
+.tooltip{
+  z-index: 1020;
 }
 
 .tooltip .arrow:before{
