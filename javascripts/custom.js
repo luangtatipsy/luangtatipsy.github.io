@@ -57,8 +57,9 @@ $(function(){
             items: 3,
             center: true,
             margin: 20,
-            loop: true,
+            loop: false,
             dots: true,
+            nav: true
           });
           
           $('.image-link').magnificPopup({
