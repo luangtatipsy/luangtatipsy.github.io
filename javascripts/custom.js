@@ -12,22 +12,6 @@ function handleStickyNavbar()
 	}
 }
 
-// Call the function with the following parameters:
-// onViewport(selector, classNameToBeAdded, offset, callback);
-
-// Example:
-// onViewport("#about-me", "animated bounce", 500);
-// onViewport('#education', '', 500, function(){
-// 	$('.timeline li').each(function () {
-// 		onViewport(this, "animated bounce", 500);
-// 	});
-// });
-// onViewport('#skills', '', 500, function(){
-// 	$('.col').each(function () {
-// 		onViewport(this, "animated bounce", 500);
-// 	});
-// });
-
 $(function(){
 	$(".progress-bar").each(function(){
 		var each_bar_width = $(this).attr('aria-valuenow');
