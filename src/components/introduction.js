@@ -68,6 +68,7 @@ const Introduction = () => {
                   alt="Made with Bulma"
                   src="https://bulma.io/images/made-with-bulma--white.png"
                   width="128"
+                  placeholder="none"
                 />
               </Link>
             </div>
