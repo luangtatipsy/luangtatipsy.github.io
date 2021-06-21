@@ -23,12 +23,12 @@
   }
 
   .full-name {
-    @extend .is-size-3;
+    @extend .is-size-4;
     @extend .has-text-weight-bold;
   }
 
   .position {
-    @extend .is-size-5;
+    @extend .is-size-6;
     @extend .has-text-weight-normal;
   }
   .buttons {
@@ -64,7 +64,7 @@
     @extend .p-5;
     @extend .mt-2;
 
-    font-size: 18px;
+    font-size: 16px;
     border: 2px solid $white;
     background: transparent;
     color: $white;
