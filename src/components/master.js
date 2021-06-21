@@ -10,10 +10,10 @@ const MasterLayout = ({ title }) => {
   });
 
   return (
-    <master>
+    <div>
       <title>{title}</title>
       <PersonalCard />
-    </master>
+    </div>
   );
 };
 
