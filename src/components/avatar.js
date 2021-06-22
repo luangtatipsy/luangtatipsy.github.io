@@ -8,7 +8,7 @@ const Avatar = ({ align }) => {
         <StaticImage
           class="is-rounded"
           alt="My avatar"
-          src="../images/avatar.jpg"
+          src="../images/avatar.png"
           width="180"
           placeholder="none"
         />
