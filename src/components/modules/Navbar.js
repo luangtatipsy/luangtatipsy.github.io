@@ -29,36 +29,36 @@ const Navbar = () => {
         </div>
         <div
           className={`px-2 pt-2 pb-4 ${
-            isOpen ? "opacity-100" : "opacity-0"
-          } text-center md:opacity-100 md:flex md:py-0 md:items-center transition ease-in duration-300`}
+            isOpen ? "block" : "hidden"
+          } text-center md:opacity-100 md:flex md:py-0 md:items-center`}
         >
           <a
             href="#"
-            className="block font-semibold transition duration-700 text-gray-400 hover:text-gray-900 rounded px-2 py-1"
+            className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1"
           >
             About
           </a>
           <a
             href="#"
-            className="block font-semibold transition duration-700 text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
+            className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
           >
             Education
           </a>
           <a
             href="#"
-            className="block font-semibold transition duration-700 text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
+            className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
           >
             Work Experience
           </a>
           <a
             href="#"
-            className="block font-semibold transition duration-700 text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
+            className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
           >
             Blog
           </a>
           <a
             href="#"
-            className="block font-semibold transition duration-700 text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
+            className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
           >
             Contact
           </a>
