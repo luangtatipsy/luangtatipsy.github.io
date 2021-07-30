@@ -52,7 +52,7 @@ const Navbar = () => {
           } text-center md:opacity-100 md:flex md:py-0 md:items-center`}
         >
           {navItems.map((item) => {
-            const offset = item.id == "experience" ? -75 : 0;
+            const offset = item.id === "experience" ? -75 : 0;
             return (
               <Link
                 key={item.id}
