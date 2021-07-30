@@ -55,7 +55,7 @@ const Footer = () => {
               key={idx}
               className="flex items-center justify-center bg-transparent rounded-full h-12 w-12 hover:bg-gray-100 transition duration-500 ease-in-out"
             >
-              <a target="_blank" href={icon.externalUrl}>
+              <a target="_blank" rel="noreferrer" href={icon.externalUrl}>
                 <FontAwesomeIcon
                   className="text-gray-500 text-2xl"
                   // size="lg"

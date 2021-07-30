@@ -46,7 +46,11 @@ const Education = () => {
             })}
           </div>
           <div className="w-4/12 sticky hidden lg:block">
-            <img className="mx-auto" src={educationImage} />
+            <img
+              className="mx-auto"
+              src={educationImage}
+              alt="A man wearing suit stands in a front of a document background"
+            />
           </div>
         </div>
       </div>

@@ -59,7 +59,11 @@ const Certificate = () => {
           {certificates.map((certificate, idx) => {
             return (
               <div key={idx} className="inline-block px-3">
-                <a target="_blank" href={certificate.credential}>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={certificate.credential}
+                >
                   <div
                     className="px-3 py-5 text-center h-52 overflow-hidden rounded-lg shadow-md bg-gray-50 hover:shadow-xl transition-shadow duration-200 ease-in-out"
                     style={{ width: "350px" }}

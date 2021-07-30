@@ -4,7 +4,7 @@ import avatar from "./../../images/memoji.png";
 const Avatar = () => {
   return (
     <div className="rounded-full flex items-center justify-center w-32 h-32 bg-gray-200">
-      <img class="w-20" src={avatar} />
+      <img class="w-20" src={avatar} alt="My memoji avatar" />
     </div>
   );
 };

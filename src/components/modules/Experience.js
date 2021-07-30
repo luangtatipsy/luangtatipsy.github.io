@@ -1,3 +1,5 @@
+import workCompany from "./../../images/working-company.svg";
+
 const PositionCard = () => {
   return (
     <div className="relative -mt-10 md:-mt-24 lg:-mt-32 py-3">
@@ -55,10 +57,17 @@ const PositionCard = () => {
               <p>including data manipulation, EDA, and visualization. </p>
             </div>
             <div className="pt-8 flex justify-center items-center">
-              <img
-                className="h-12"
-                src="https://wisesight.com/wp-content/uploads/2021/02/color.svg"
-              />
+              <a
+                href="https://www.wisesight.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  className="h-12"
+                  src={workCompany}
+                  alt="WISESIGHT's logo"
+                />
+              </a>
             </div>
           </div>
         </div>
