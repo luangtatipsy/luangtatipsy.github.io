@@ -22,23 +22,23 @@ const Footer = () => {
   const socialIcons = [
     {
       faIcon: "facebook-f",
-      externalUrl: "",
+      externalUrl: "https://www.facebook.com/luangtatipsyy",
     },
     {
       faIcon: "instagram",
-      externalUrl: "",
+      externalUrl: "https://www.instagram.com/luangtatipsyy",
     },
     {
       faIcon: "linkedin-in",
-      externalUrl: "",
+      externalUrl: "https://www.linkedin.com/in/taechawatk",
     },
     {
       faIcon: "github",
-      externalUrl: "",
+      externalUrl: "https://github.com/luangtatipsy",
     },
     {
       faIcon: "medium-m",
-      externalUrl: "",
+      externalUrl: "https://medium.com/@luangtatipsy",
     },
   ];
 
