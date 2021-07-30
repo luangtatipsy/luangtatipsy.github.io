@@ -2,9 +2,28 @@ import React, { useState } from "react";
 import { ReactComponent as Logo } from "../../images/logo.svg";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setisOpen] = useState(false);
+  const navItems = [
+    {
+      id: "education",
+      displayText: "Education",
+    },
+    {
+      id: "experience",
+      displayText: "Skills & Experience",
+    },
+    {
+      id: "certificates",
+      displayText: "Certificates",
+    },
+    {
+      id: "contact",
+      displayText: "Contact",
+    },
+  ];
 
   const handleClick = () => {
     setisOpen(!isOpen);
@@ -32,30 +51,23 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } text-center md:opacity-100 md:flex md:py-0 md:items-center`}
         >
-          <a
-            href="#"
-            className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
-          >
-            Education
-          </a>
-          <a
-            href="#"
-            className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
-          >
-            Skills & Experience
-          </a>
-          <a
-            href="#"
-            className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
-          >
-            Certificates
-          </a>
-          <a
-            href="#"
-            className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
-          >
-            Contact
-          </a>
+          {navItems.map((item) => {
+            const offset = item.id == "experience" ? -75 : 0;
+            return (
+              <Link
+                key={item.id}
+                className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2 cursor-pointer"
+                activeClass="active"
+                to={item.id}
+                spy={true}
+                smooth={true}
+                offset={offset}
+                duration={750}
+              >
+                {item.displayText}
+              </Link>
+            );
+          })}
         </div>
       </nav>
     </div>
