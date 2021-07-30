@@ -34,12 +34,6 @@ const Navbar = () => {
         >
           <a
             href="#"
-            className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1"
-          >
-            About
-          </a>
-          <a
-            href="#"
             className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
           >
             Education
@@ -48,13 +42,13 @@ const Navbar = () => {
             href="#"
             className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
           >
-            Work Experience
+            Skills & Experience
           </a>
           <a
             href="#"
             className="block font-semibold text-gray-400 hover:text-gray-900 rounded px-2 py-1 mt-1 md:mt-0 md:ml-2"
           >
-            Blog
+            Certificates
           </a>
           <a
             href="#"
