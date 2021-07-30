@@ -5,12 +5,15 @@ import Experience from "./modules/Experience";
 import Certificate from "./modules/Certificate";
 import Footer from "./modules/Footer";
 import { Element } from "react-scroll";
+import FadeIn from "react-fade-in";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <FadeIn delay="500" transitionDuration="1000">
+        <Hero />
+      </FadeIn>
       <Element name="education">
         <Education />
       </Element>
