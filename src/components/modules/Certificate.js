@@ -6,6 +6,17 @@ import googleCloud from "./../../images/google-cloud.svg";
 import ibm from "./../../images/ibm.svg";
 import "../../stylesheets/scrollbar.css";
 
+import Carousel, {
+  arrowsPlugin,
+  slidesToShowPlugin,
+} from "@brainhubeu/react-carousel";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "@brainhubeu/react-carousel/lib/style.css";
+
 const Certificate = () => {
   const certificates = [
     {
@@ -49,13 +60,57 @@ const Certificate = () => {
         "https://www.coursera.org/account/accomplishments/specialization/ZD79WQ8WYGKE",
     },
   ];
+
   return (
     <div className="flex flex-col bg-gray-200 m-auto py-8">
-      <h1 className="font-bold text-4xl text-gray-700 text-center uppercase tracking-wider py-10">
-        Certificates
-      </h1>
-      <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
-        <div className="px-10 flex flex-nowrap">
+      <div className="container mx-auto">
+        <h1 className="font-bold text-4xl text-gray-700 text-center uppercase tracking-wider py-10">
+          Certificates
+        </h1>
+        <Carousel
+          plugins={[
+            "infinite",
+            {
+              resolve: arrowsPlugin,
+              options: {
+                arrowLeft: (
+                  <button type="button" className="block">
+                    <FontAwesomeIcon
+                      className="text-gray-500"
+                      size="lg"
+                      icon={faChevronLeft}
+                    />
+                  </button>
+                ),
+                arrowRight: (
+                  <button type="button" className="block">
+                    <FontAwesomeIcon
+                      className="text-gray-500"
+                      size="lg"
+                      icon={faChevronRight}
+                    />
+                  </button>
+                ),
+                arrowRightDisabled: (
+                  <button type="button" className="block">
+                    <FontAwesomeIcon
+                      className="text-gray-100"
+                      size="lg"
+                      icon={faChevronRight}
+                    />
+                  </button>
+                ),
+                addArrowClickHandler: true,
+              },
+            },
+            {
+              resolve: slidesToShowPlugin,
+              options: {
+                numberOfSlides: 4,
+              },
+            },
+          ]}
+        >
           {certificates.map((certificate, idx) => {
             return (
               <div key={idx} className="inline-block px-3">
@@ -88,7 +143,7 @@ const Certificate = () => {
               </div>
             );
           })}
-        </div>
+        </Carousel>
       </div>
     </div>
   );
