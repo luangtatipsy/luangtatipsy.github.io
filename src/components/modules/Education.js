@@ -33,7 +33,7 @@ const Education = () => {
                   <h4 className="flex items-center px-7 py-16 font-bold text-xl border-r-8 border-gray-300 text-gray-600">
                     {education.gradMonth}, {education.gradYear}
                   </h4>
-                  <div class="col-span-3 py-16 pl-6">
+                  <div class="col-span-3 py-16 px-4">
                     <h4 className="font-bold text-lg text-gray-600 md:text-2xl">
                       {education.degree}
                     </h4>

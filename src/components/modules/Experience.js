@@ -2,7 +2,7 @@ import workCompany from "./../../images/working-company.svg";
 
 const PositionCard = () => {
   return (
-    <div className="relative -mt-10 md:-mt-24 lg:-mt-32 py-3">
+    <div className="relative -mt-14 md:-mt-24 lg:-mt-32 py-3">
       <div className="hidden lg:block absolute inset-0 bg-gradient-to-tr from-gray-800 to-red-700 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
       <div className="relative py-16 px-8 bg-white shadow-lg lg:rounded-3xl lg:p-20">
         <div className="max-w-md mx-auto">
@@ -113,7 +113,7 @@ const Experience = () => {
 
   return (
     <div className="bg-gray-400">
-      <div className="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-1">
+      <div className="container mx-auto py-10 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:grid-rows-1">
         <PositionCard />
         <div className="flex flex-col space-y-10 lg:space-y-0 lg:justify-around lg:pl-20 h-full">
           {skillsArray.map((obj) => {
