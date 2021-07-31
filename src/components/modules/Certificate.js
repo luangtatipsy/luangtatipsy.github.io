@@ -63,7 +63,7 @@ const Certificate = () => {
 
   return (
     <div className="flex flex-col bg-gray-200 m-auto py-8">
-      <div className="container mx-auto">
+      <div className="px-10">
         <h1 className="font-bold text-4xl text-gray-700 text-center uppercase tracking-wider py-10">
           Certificates
         </h1>
@@ -110,10 +110,52 @@ const Certificate = () => {
               },
             },
           ]}
+          breakpoints={{
+            425: {
+              plugins: [
+                {
+                  resolve: slidesToShowPlugin,
+                  options: {
+                    numberOfSlides: 1,
+                  },
+                },
+              ],
+            },
+            768: {
+              plugins: [
+                {
+                  resolve: slidesToShowPlugin,
+                  options: {
+                    numberOfSlides: 2,
+                  },
+                },
+              ],
+            },
+            1024: {
+              plugins: [
+                {
+                  resolve: slidesToShowPlugin,
+                  options: {
+                    numberOfSlides: 2,
+                  },
+                },
+              ],
+            },
+            1440: {
+              plugins: [
+                {
+                  resolve: slidesToShowPlugin,
+                  options: {
+                    numberOfSlides: 3,
+                  },
+                },
+              ],
+            },
+          }}
         >
           {certificates.map((certificate, idx) => {
             return (
-              <div key={idx} className="inline-block px-3">
+              <div key={idx} className="mx-0">
                 <a
                   target="_blank"
                   rel="noreferrer"
