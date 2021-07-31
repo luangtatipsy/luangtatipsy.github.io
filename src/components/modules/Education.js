@@ -26,14 +26,14 @@ const Education = () => {
           Education
         </h1>
         <div className="container mx-auto flex items-center flex-col lg:justify-between lg:flex-row py-7">
-          <div class="grid grid-cols-4 gap-0">
-            {educations.map((education) => {
+          <div className="grid grid-cols-4 gap-0">
+            {educations.map((education, idx) => {
               return (
-                <React.StrictMode>
+                <React.StrictMode key={idx}>
                   <h4 className="flex items-center px-7 py-16 font-bold text-xl border-r-8 border-gray-300 text-gray-600">
                     {education.gradMonth}, {education.gradYear}
                   </h4>
-                  <div class="col-span-3 py-16 px-4">
+                  <div className="col-span-3 py-16 px-4">
                     <h4 className="font-bold text-lg text-gray-600 md:text-2xl">
                       {education.degree}
                     </h4>
