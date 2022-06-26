@@ -7,8 +7,8 @@ const PositionCard = () => {
       <div className="relative py-16 px-8 bg-white shadow-lg lg:rounded-3xl lg:p-20">
         <div className="max-w-md mx-auto">
           <div>
-            <h1 className="text-2xl text-center uppercase font-bold tracking-wider">
-              machine learning engineer
+            <h1 className="text-xl text-center uppercase font-bold tracking-wider">
+              lead machine learning engineer
             </h1>
             <h4 className="text-center font-semibold uppercase pt-4 text-gray-500">
               2019 - Present
