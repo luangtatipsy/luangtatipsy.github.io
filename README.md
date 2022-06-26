@@ -1,5 +1,19 @@
-# My Personal Resume Site
-### __Taechawat Konkaew__
+# Taechawat Konkaew's Personal Site
 
-## Incoming Email Organizer
-- App Scripts: https://script.google.com/home/projects/1AhTUmtiGz5PXaFAYiIL2WfMaBeBNFSKzW2KY6WdIlyv0uvNXvNvet8ee
+### Prerequisites
+- [npm](https://www.npmjs.com/)
+
+### Install dependencies
+```sh
+npm install
+```
+
+### Run development environment
+```sh
+npm run start
+```
+
+### Deploy to production environment
+```sh
+npm run deploy -m "<commit-message>"
+```
